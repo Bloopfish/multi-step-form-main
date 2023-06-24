@@ -1,0 +1,35 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url(./assets/fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(./assets/fonts/Ubuntu-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(./assets/fonts/Ubuntu-Bold.ttf);
+    font-weight: bold;
+}
+
+:root {
+    --marineblue: hsl(213, 96%, 18%);
+    --purplishblue: hsl(243, 100%, 62%);
+    --pastelblue: hsl(228, 100%, 84%);
+    --lightblue: hsl(206, 94%, 87%);
+    --strawberryred: hsl(354, 84%, 57%);
+    --coolgray: hsl(231, 11%, 63%);
+    --lightgray: hsl(229, 24%, 87%);
+    --magnolia: hsl(217, 100%, 97%);
+    --alabaster: hsl(231, 100%, 99%);
+}
+
+body {
+    font-family: Ubuntu;
+}
+
+footer { font-size: 11px; text-align: center; }
+footer a { color: hsl(228, 45%, 44%); }
