@@ -47,23 +47,54 @@
     <input id="phone" type="tel" placeholder="e.g. +1 234 567 890">
   </div>
   <div class="step-two card">
-    Select your plan
-    You have the option of monthly or yearly billing.
+    <h1>Select your plan</h1>
+    <p>You have the option of monthly or yearly billing.</p>
 
-    Arcade
-    $9/mo
+    <div class="selector monthly">
+      <img src="./assets/images/icon-arcade.svg" alt="Arcade icon">
+      <div>
+        <h2>Arcade</h2>
+        <p>$9/mo</p>
+      </div>
+    </div>
+    <!-- <div class="selector yearly">
+      <h2>Arcade</h2>
+      $90/yr
+      <span class="blue-text">2 months free</span>
+    </div> -->
 
-    Advanced
-    $12/mo
+    <div class="selector monthly">
+      <img src="./assets/images/icon-advanced.svg" alt="Advanced icon">
+      <div>
+        <h2>Advanced</h2>
+        <p>$12/mo</p>
+      </div>
+    </div>
+    <!-- <div class="selector yearly">
+      <img src="./assets/images/icon-advanced.svg" alt="Advanced icon">
+      <h2>Advanced</h2>
+      $120/yr
+      <span class="blue-text">2 months free</span>
+    </div> -->
 
-    Pro
-    $15/mo
+    <div class="selector monthly">
+      <img src="./assets/images/icon-pro.svg" alt="Pro icon">
+      <div>
+        <h2>Pro</h2>
+        <p>$15/mo</p>
+      </div>
+    </div>
+    <!-- <div class="selector yearly">
+      <h2>Pro</h2>
+      $150/yr
+      <span class="blue-text">2 months free</span>
+    </div> -->
 
-    Monthly
-    Yearly
-
-    Go Back
-    Next Step
+    <input type="checkbox" id="switch">
+    <label for="switch">
+      Monthly
+      Yearly
+    </label>
   </div>
   <div class="step-three card">
     Pick add-ons
