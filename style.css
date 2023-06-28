@@ -80,7 +80,7 @@ body {
     padding: 25px;
 }
 
-.step-one, .step-three, .step-four, .step-five {
+.step-one, .step-two, .step-three, .step-five {
     display: none;
 }
 
@@ -102,7 +102,7 @@ label {
     font-weight: 500;
 }
 
-input {
+.text-box {
     width: 100%;
     height: 2.5rem;
     border-radius: 4px;
@@ -116,12 +116,76 @@ input {
     margin-bottom: 0.875rem;
 }
 
-.selector {
+.step-two .selector {
     display: flex;
     padding: 1rem;
     border: 1px solid var(--lightgray);
     border-radius: 8px;
     margin-block: 0.75rem;
+}
+
+.step-three .selector {
+    display: grid;
+    padding: 1rem;
+    border: 1px solid var(--lightgray);
+    border-radius: 8px;
+    margin-block: 0.75rem;
+    grid-template-columns: 1fr 10fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.step-three .selector div {
+    line-height: 1.5;
+}
+
+.step-three .selector span {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--coolgray);
+}
+
+.checkbox input {
+    height: 0;
+    width: 0;
+}
+
+.checkbox {
+    display: block;
+    position: relative;
+    user-select: none;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid var(--lightgray);
+    border-radius: 4px;
+} 
+
+.checkbox input:checked ~ .checkmark {
+    background-color: var(--purplishblue);
+    border: none;
+}
+
+.checkbox .checkmark:after {
+    content: url('./assets/images/icon-checkmark.svg');
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    display: none;
+  }
+
+.checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.step-three .selector:has(input:checked) {
+    border-color: var(--purplishblue);
+    background-color: var(--lightblue);
 }
 
 .selector div {
@@ -185,7 +249,7 @@ input {
     align-items: flex-end;
 }
 
-input {
+#switch {
     display: none;
 }
 

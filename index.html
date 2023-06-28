@@ -38,13 +38,13 @@
     <p>Please provide your name, email address, and phone number.</p>
 
     <label for="name">Name</label>
-    <input id="name" placeholder="e.g. Stephen King">
+    <input id="name" class="text-box" placeholder="e.g. Stephen King">
 
     <label for="email">Email Address</label>
-    <input id="email" type="email" placeholder="e.g. stephenking@lorem.com">
+    <input id="email" class="text-box" type="email" placeholder="e.g. stephenking@lorem.com">
     
     <label for="phone">Phone Number</label>
-    <input id="phone" type="tel" placeholder="e.g. +1 234 567 890">
+    <input id="phone" class="text-box" type="tel" placeholder="e.g. +1 234 567 890">
   </div>
   <div class="step-two card">
     <h1>Select your plan</h1>
@@ -93,8 +93,8 @@
     <div class="switch-box">
       <span class="left-text">Monthly</span>
       
-      <input type="checkbox" id="example"/>
-      <label for="example" class="toggle">
+      <input type="checkbox" id="switch"/>
+      <label for="switch" class="toggle">
         <div class="slider"></div>
       </label>
 
@@ -102,23 +102,47 @@
     </div>
   </div>
   <div class="step-three card">
-    Pick add-ons
-    Add-ons help enhance your gaming experience.
+    <h1>Pick add-ons</h1>
+    <p>Add-ons help enhance your gaming experience.</p>
+    
+    <div class="selector monthly">
+      <label class="checkbox">
+        <input type="checkbox"/>
+        <span class="checkmark"></span>
+      </label>
 
-    Online service
-    Access to multiplayer games
-    +$1/mo
+      <div>
+        <h2>Online service</h2>
+        <p>Access to multiplayer games</p>
+      </div>
+      <span>+$1/mo</span>
+    </div>
 
-    Larger storage
-    Extra 1TB of cloud save
-    +$2/mo
+    <div class="selector monthly">
+      <label class="checkbox">
+        <input type="checkbox"/>
+        <span class="checkmark"></span>
+      </label>
 
-    Customizable Profile
-    Custom theme on your profile
-    +$2/mo
+      <div>
+        <h2>Larger storage</h2>
+        <p>Extra 1TB of cloud save</p>
+      </div>
+      <span>+$2/mo</span>
+    </div>
+    
+    <div class="selector monthly">
+      <label class="checkbox">
+        <input type="checkbox"/>
+        <span class="checkmark"></span>
+      </label>
 
-    Go Back
-    Next Step
+      <div>
+        <h2>Customizable Profile</h2>
+        <p>Custom theme on your profile</p>
+      </div>
+      <span>+$2/mo</span>
+    </div>
   </div>
   <div class="step-four card">
     Finishing up
